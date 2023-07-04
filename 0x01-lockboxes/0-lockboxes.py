@@ -4,6 +4,8 @@
 
 def canUnlockAll(boxes):
     """can unlock all boxes function"""
+    if not boxes or type(boxes) is not list:
+        return False
     if len(boxes) > 0:
         boxes[0].append('open')
     else:
@@ -11,7 +13,7 @@ def canUnlockAll(boxes):
 
     for index, box in enumerate(boxes):
         for inner in box:
-            if type(inner) is int:
+            if isinstance(inner, int):
                 if (inner != index):
                     boxes[inner].append('open')
     for box in boxes:
