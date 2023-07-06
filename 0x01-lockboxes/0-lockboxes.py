@@ -4,7 +4,7 @@
 
 def canUnlockAll(boxes):
     """can unlock all boxes function"""
-    if not boxes or type(boxes) is not list:
+    if not boxes or isinstance(boxes, list) is False:
         return False
     if len(boxes) > 0:
         boxes[0].append('open')
