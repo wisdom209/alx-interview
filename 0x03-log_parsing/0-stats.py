@@ -6,7 +6,7 @@ import re
 
 if __name__ == '__main__':
     """Log parsing function"""
-    pattern = r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\s{1}-\s\[\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}\.\d{6}\]\s"GET\s\/projects\/260\sHTTP\/1.1"\s(\d{3})\s(\d+)$'
+    pattern = r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\s{1}-\s\[\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}\.\d{6}\]\s"GET\s\/projects\/260\sHTTP\/1.1"\s(\d{3})\s(\d+)$'  # nopep8
 
     file_details = {'codes': {'200': 0, '301': 0, '400': 0,
                               '401': 0, '403': 0, '404': 0,
