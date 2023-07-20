@@ -29,9 +29,11 @@ if __name__ == '__main__':
                     print("File size: {}".format(file_details['size']))
                     for key, value in sorted(file_details['codes'].items(),
                                              key=lambda x: int(x[0])):
-                        print("{}: {}".format(key, value))
+                        if value != 0:
+                            print("{}: {}".format(key, value))
     finally:
         print("File size: {}".format(file_details['size']))
         for key, value in sorted(file_details['codes'].items(),
                                  key=lambda x: int(x[0])):
-            print("{}: {}".format(key, value))
+            if value != 0:
+                print("{}: {}".format(key, value))
