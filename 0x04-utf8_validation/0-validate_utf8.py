@@ -35,8 +35,8 @@ def validUTF8(data):
         set_bits = get_significant_bits(data[index])
         if set_bits == 1 or set_bits > 4:
             return False
-        if set_bits == 0:
-            continue
+        # if set_bits == 0:
+        #     continue
         next_index = check_next_valid_bytes(set_bits, data, index)
         if next_index == -1:
             return False
