@@ -31,6 +31,8 @@ def check_next_valid_bytes(num_set_bit, char_list, curr_index):
 
 def validUTF8(data):
     """check valid utf8"""
+    if not data or len(data) == 0:
+        return False
     for index in range(len(data)):
         set_bits = get_significant_bits(data[index])
         if set_bits == 1 or set_bits > 4:
