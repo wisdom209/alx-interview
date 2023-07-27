@@ -20,7 +20,7 @@ def check_next_valid_bytes(num_set_bit, char_list, curr_index):
         for _ in range(num_bytes_to_check):
             byte_to_check = char_list[curr_index + count]
             count += 1
-            if (byte_to_check & 1 << 7) and not (byte_to_check & 1 << 6):
+            if (byte_to_check & 0b11000000) != 0b10000000:
                 continue
             else:
                 return -1
