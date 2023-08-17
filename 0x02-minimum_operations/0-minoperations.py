@@ -20,8 +20,8 @@ def minOperations(n):
 
         remaining_chars_to_paste = n - num_chars_in_file
 
-        if remaining_chars_to_paste < num_chars_in_clipboard:
-            return 0
+        #if remaining_chars_to_paste < num_chars_in_clipboard:
+        #   return 0
 
         if remaining_chars_to_paste % num_chars_in_file != 0:
             num_chars_in_file += num_chars_in_clipboard
