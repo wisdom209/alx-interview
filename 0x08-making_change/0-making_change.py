@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that determine the fewest number of
+"""Module that determines the fewest number of
 coins needed to meet a given amount total"""
 
 
