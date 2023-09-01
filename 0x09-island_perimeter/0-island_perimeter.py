@@ -12,6 +12,8 @@ def calculate_consecutive_len(my_list, item):
         else:
             counts.append(counter)
             counter = 0
+    if (counter != 0):
+        counts.append(counter)
     if len(counts) > 0:
         return max(counts)
     return 0
