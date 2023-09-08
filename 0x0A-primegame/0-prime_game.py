@@ -58,8 +58,6 @@ def isWinner(numRounds, rounds):
             maria_wins += 1
         else:
             ben_wins += 1
-
-    print(ben_wins, maria_wins)
     if ben_wins > maria_wins:
         return "Ben"
     elif maria_wins > ben_wins:
