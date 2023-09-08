@@ -2,4 +2,7 @@
 
 isWinner = __import__('0-prime_game').isWinner
 
-print("Winner: {}".format(isWinner(5, [4, 5, 1, 5, 5])))
+nums = [0] * 10000
+for i in range(10000):
+	nums[i] = i
+print("Winner: {}".format(isWinner(10000, nums)))

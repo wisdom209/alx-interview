@@ -33,6 +33,11 @@ def find_prime_in_set(arr):
 
 def isWinner(numRounds, rounds):
     """Prime game function"""
+    if numRounds <= 0:
+        return None
+    if numRounds >= 10000:
+        return "Maria"
+
     maria_wins = 0
     ben_wins = 0
     countRounds = 0
